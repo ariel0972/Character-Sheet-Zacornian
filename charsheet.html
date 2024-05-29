@@ -1,72 +1,77 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
 
-<div class="container">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
 
-  <div class="row">
+<body>
+  <div class="container">
 
-    <div class="col-4">
+    <div class="row">
 
-      <table class="table">
-        <tr>
-          <th>Atributos</th>
-          <th>Pontos</th>
-          <th>Modificador</th>
-        </tr>
-        <tr>
-          <td>Inteligência</td>
-          <td><input type="number" value="15" id="intPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="intMod"></td>
-        </tr>
-        <tr>
-          <td>Força</td>
-          <td><input type="number" value="15" id="forPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="forMod"></td>
-        </tr>
-        <tr>
-          <td>Constituição</td>
-          <td><input type="number" value="15" id="conPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="conMod"></td>
-        </tr>
-        <tr>
-          <td>Destreza</td>
-          <td><input type="number" value="15" id="desPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="desMod"></td>
-        </tr>
-        <tr>
-          <td>Poder</td>
-          <td><input type="number" value="15" id="podPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="podMod"></td>
-        </tr>
-        <tr>
-          <td>Carisma</td>
-          <td><input type="number" value="15" id="carPonto" onchange="updateMod()"></td>
-          <td><input type="number" id="carMod"></td>
-        </tr>
-      </table>
+      <div class="col-4">
 
-    </div>
-    <div class="col-4">
+        <table class="table">
+          <tr>
+            <th>Atributos</th>
+            <th>Pontos</th>
+          </tr>
+          <tr>
+            <td>Inteligência</td>
+            <td><input type="number" value="15" id="intPonto"></td>
+          </tr>
+          <tr>
+            <td>Força</td>
+            <td><input type="number" value="15" id="forPonto"></td>
+          </tr>
+          <tr>
+            <td>Constituição</td>
+            <td><input type="number" value="15" id="conPonto"></td>
+          </tr>
+          <tr>
+            <td>Destreza</td>
+            <td><input type="number" value="15" id="desPonto"></td>
+          </tr>
+          <tr>
+            <td>Poder</td>
+            <td><input type="number" value="15" id="podPonto"></td>
+          </tr>
+          <tr>
+            <td>Carisma</td>
+            <td><input type="number" value="15" id="carPonto"></td>
+          </tr>
+        </table>
 
-      <h2>Nivel</h2>
+      </div>
+      <div class="col-4">
 
-      <br>
+        <h2>Nivel</h2>
 
-      <input type="number" id="playerLvl" min="0" max="30" value="0">
+        <br>
 
-    </div>
+        <input type="number" id="playerLvl" min="0" max="30" value="0">
 
-    <div class="col-4">
+      </div>
 
-      <h2>Experiência</h2>
-      <br>
+      <div class="col-4">
 
-      <input type="number" id="exp" value="100" onchange="updateplayerlevel()">
+        <h2>Experiência</h2>
+        <br>
+
+        <input type="number" id="exp" value="100" onchange="">
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
+  </div>
 
-</div>
+</body>
+<script src="main.js" async></script>
+</html>
